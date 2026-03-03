@@ -34,39 +34,39 @@
     };
 
     macros {
-        MACRO_UNDO: UNDO {
+        MACRO_UNDO: M_UNDO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(Z)>;
-            label = "UNDO";
+            label = "M_UNDO";
         };
 
-        MACRO_REDO: REDO {
+        MACRO_REDO: M_REDO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(Y)>;
-            label = "REDO";
+            label = "M_REDO";
         };
 
-        MACRO_CUT: CUT {
+        MACRO_CUT: M_CUT {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(X)>;
-            label = "CUT";
+            label = "M_CUT";
         };
 
-        MACRO_COPY: COPY {
+        MACRO_COPY: M_COPY {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(C)>;
-            label = "COPY";
+            label = "M_COPY";
         };
 
-        MACRO_PASTE: PASTE {
+        MACRO_PASTE: M_PASTE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(V)>;
-            label = "PASTE";
+            label = "M_PASTE";
         };
     };
 
