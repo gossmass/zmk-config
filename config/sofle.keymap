@@ -85,11 +85,11 @@
 
         layer_3 {
             bindings = <
-&kp ESC    &kp N1    &kp N2     &kp N3    &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8            &kp N9    &kp N0  &kp BSPC
-&kp TAB    &kp APOS  &kp COMMA  &kp DOT   &kp P     &kp Y                              &kp F      &kp G    &kp C             &kp R     &kp L   &kp FSLH
-&kp LSHFT  &kp A     &kp O      &kp E     &kp U     &kp I                              &kp D      &kp H    &kp T             &kp N     &kp S   &kp MINUS
-&kp LCTRL  &kp SEMI  &kp Q      &kp J     &kp K     &kp X      &none        &none      &kp B      &kp M    &kp W             &kp V     &kp Z   &kp LBKT
-                     &trans     &kp LGUI  &kp LALT  &kp ENTER  &kp SPACE    &kp SPACE  &kp ENTER  &kp DEL  &kp LS(LEFT_ALT)  &kp LBKT
+&kp ESC    &kp N1    &kp N2     &kp N3    &kp N4    &kp N5                             &kp N6     &kp N7   &kp N8            &kp N9  &kp N0  &kp BSPC
+&kp TAB    &kp APOS  &kp COMMA  &kp DOT   &kp P     &kp Y                              &kp F      &kp G    &kp C             &kp R   &kp L   &kp FSLH
+&kp LSHFT  &kp A     &kp O      &kp E     &kp U     &kp I                              &kp D      &kp H    &kp T             &kp N   &kp S   &kp MINUS
+&kp LCTRL  &kp SEMI  &kp Q      &kp J     &kp K     &kp X      &none        &none      &kp B      &kp M    &kp W             &kp V   &kp Z   &kp LBKT
+                     &trans     &kp LGUI  &kp LALT  &kp ENTER  &kp SPACE    &kp SPACE  &kp ENTER  &kp DEL  &kp LS(LEFT_ALT)  &kp Z
             >;
 
             label = "DWORAK";
