@@ -33,6 +33,18 @@
         };
     };
 
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&mmv MOVE_RIGHT>;
+
+            label = "NEW_MACRO";
+            wait-ms = <100>;
+            tap-ms = <1000>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,11 +73,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE  &kp F1    &kp F2           &kp F3      &kp F4            &kp F5                               &kp F6  &kp F7     &kp F8   &kp F9           &kp F10    &kp F11
-&trans     &kp HOME  &kp UP           &kp END     &kp BACKSLASH     &kp SLASH                            &kp N7  &kp N8     &kp N9   &kp KP_SUBTRACT  &kp PLUS   &kp F12
-&trans     &kp LEFT  &kp DOWN         &kp RIGHT   &kp LEFT_BRACE    &kp RIGHT_BRACE                      &kp N4  &kp N5     &kp N6   &kp STAR         &kp EQUAL  &trans
-&trans     &none     &kp PRINTSCREEN  &kp INSERT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &kp N1  &kp N2     &kp N3   &kp UNDER        &trans     &trans
-                     &trans           &trans      &trans            &trans             &trans    &trans  &kp N0  &kp COMMA  &kp DOT  &trans
+&kp GRAVE  &kp F1    &kp F2           &kp F3      &kp F4            &kp F5                                   &kp F6  &kp F7     &kp F8   &kp F9           &kp F10    &kp F11
+&trans     &kp HOME  &kp UP           &kp END     &kp BACKSLASH     &kp SLASH                                &kp N7  &kp N8     &kp N9   &kp KP_SUBTRACT  &kp PLUS   &kp F12
+&trans     &kp LEFT  &kp DOWN         &kp RIGHT   &kp LEFT_BRACE    &kp RIGHT_BRACE                          &kp N4  &kp N5     &kp N6   &kp STAR         &kp EQUAL  &trans
+&trans     &none     &kp PRINTSCREEN  &kp INSERT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &new_macro  &kp N1  &kp N2     &kp N3   &kp UNDER        &trans     &trans
+                     &trans           &trans      &trans            &trans             &trans    &trans      &kp N0  &kp COMMA  &kp DOT  &trans
             >;
 
             label = "FN";
